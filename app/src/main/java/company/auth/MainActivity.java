@@ -3,6 +3,7 @@ package company.auth;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -26,12 +27,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        TaskActivity task = new TaskActivity();
         mAuth = FirebaseAuth.getInstance(); //auth init
         // [START create_user_with_email]
         final Button reg = findViewById(R.id.reg);//init button registration
         final Button auth = findViewById(R.id.auth);
         final EditText email = findViewById(R.id.ID_Email);
         final EditText pass = findViewById(R.id.ID_Pass);
+        //auth.setOnClickListener(this);
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     // Sign in success, update UI with the signed-in user's information
+                                    Intent intent = new Intent(MainActivity.this, TaskActivity.class);
+                                    startActivity(intent);
                                     Log.d(TAG, "signInWithEmail:success");
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     updateUI(user);
@@ -80,7 +85,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // [END create_user_with_email]
+       /* FirebaseUser user = mAuth.getCurrentUser();
+        //пользователь уже в приложении(авторизирован)
+        if (user!= null) {
+            Intent intent = new Intent(MainActivity.this, TaskActivity.class);
+            startActivity(intent);
+        }
+        // [END create_user_with_email]*/
     }
 
     @Override
@@ -128,8 +139,8 @@ public class MainActivity extends AppCompatActivity {
     private void reload() { }
 
     private void updateUI(FirebaseUser user) {
-        Toast.makeText(getApplicationContext(),
-                "Пора покормить кота!", Toast.LENGTH_SHORT).show();
+       /* Toast.makeText(getApplicationContext(),
+                "Пора покормить кота!", Toast.LENGTH_SHORT).show();*/
     }
 }
 
