@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Auth">
         <activity
+            android:name=".exercise1a"
+            android:exported="true" />
+        <activity
             android:name=".exercise1"
             android:exported="true" />
         <activity
