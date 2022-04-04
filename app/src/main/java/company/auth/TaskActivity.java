@@ -29,6 +29,9 @@ public class TaskActivity extends AppCompatActivity /*implements View.OnClickLis
         final Button out = findViewById(R.id.out);
         MainActivity mainA = new MainActivity();
         exercise1 exercise1 = new exercise1();
+        exercise2 exercise2 = new exercise2();
+        exercise3 exercise3 = new exercise3();
+        exercise4 exercise4 = new exercise4();
         final Button ex1 = findViewById(R.id.ex1);
         final Button ex2 = findViewById(R.id.ex2);
         final Button ex3 = findViewById(R.id.ex3);
@@ -61,16 +64,16 @@ public class TaskActivity extends AppCompatActivity /*implements View.OnClickLis
                     startActivity(intent2);
                     break;
                 case R.id.ex2:
-                    Toast.makeText(getApplicationContext(),
-                            "2!", Toast.LENGTH_SHORT).show();
+                    Intent intent3 = new Intent(TaskActivity.this, exercise2.class);
+                    startActivity(intent3);
                     break;
                 case R.id.ex3:
-                    Toast.makeText(getApplicationContext(),
-                            "3!", Toast.LENGTH_SHORT).show();
+                    Intent intent4 = new Intent(TaskActivity.this, exercise3.class);
+                    startActivity(intent4);
                     break;
                 case R.id.ex4:
-                    Toast.makeText(getApplicationContext(),
-                            "4!", Toast.LENGTH_SHORT).show();
+                    Intent intent5 = new Intent(TaskActivity.this, exercise4.class);
+                    startActivity(intent5);
                     break;
                 case R.id.teor:
                     Toast.makeText(getApplicationContext(),
