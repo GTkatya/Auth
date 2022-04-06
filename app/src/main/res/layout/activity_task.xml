@@ -8,21 +8,23 @@
 
   <Button
       android:id="@+id/out"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      android:layout_width="118dp"
+      android:layout_height="52dp"
+      android:layout_marginStart="17dp"
       android:layout_marginTop="16dp"
-      android:layout_marginEnd="16dp"
+      android:layout_marginEnd="276dp"
       android:text="sign out"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
   <Button
       android:id="@+id/ex1"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="220dp"
-      android:layout_marginEnd="80dp"
-      android:text="Изучение переменных"
+      android:layout_width="243dp"
+      android:layout_height="61dp"
+      android:layout_marginTop="228dp"
+      android:layout_marginEnd="92dp"
+      android:text="Основы JavaScript"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,18 +32,16 @@
       android:id="@+id/ex2"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="44dp"
-      android:layout_marginEnd="60dp"
-      android:text="вывод сообщений в консоль"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/ex1" />
+      android:text="Подключение JavaScript"
+      tools:layout_editor_absoluteX="78dp"
+      tools:layout_editor_absoluteY="162dp" />
 
   <Button
       android:id="@+id/ex3"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="44dp"
-      android:layout_marginEnd="156dp"
+      android:layout_marginTop="144dp"
+      android:layout_marginEnd="160dp"
       android:text="Циклы"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/ex2" />
@@ -50,7 +50,7 @@
       android:id="@+id/ex4"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="48dp"
+      android:layout_marginTop="64dp"
       android:layout_marginEnd="96dp"
       android:text="условные операторы"
       app:layout_constraintEnd_toEndOf="parent"
@@ -60,8 +60,8 @@
       android:id="@+id/teor"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginEnd="11dp"
-      android:layout_marginBottom="17dp"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="56dp"
       android:text="теория"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent" />
@@ -70,9 +70,21 @@
       android:id="@+id/FAQ"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginStart="26dp"
-      android:layout_marginBottom="16dp"
-      android:text="задачи на логику"
+      android:layout_marginStart="64dp"
+      android:layout_marginBottom="108dp"
+      android:text="Дополнительный материал"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+      android:id="@+id/bPA"
+      android:layout_width="99dp"
+      android:layout_height="81dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      app:icon="@drawable/icon"
+      app:iconTint="#FFFFFF"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

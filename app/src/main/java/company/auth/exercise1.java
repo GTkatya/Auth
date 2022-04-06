@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.Task;
+
 public class exercise1 extends AppCompatActivity {
 
     @Override
@@ -17,8 +19,9 @@ public class exercise1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise1);
         final TextView txtEx = findViewById(R.id.txtEx);
-        TaskActivity taskA = new TaskActivity();
+       /* TaskActivity taskA = new TaskActivity();*/
         exercise1a exercise1a= new exercise1a();
+        task1 task1 = new task1();
         final Button out2 = findViewById(R.id.out2);
         final Button bNext = findViewById(R.id.bNext);
         txtEx.setText("Данные - это информация которая хранит в себе некоторые сведения и факты," +
@@ -41,7 +44,7 @@ public class exercise1 extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.out2:
-                        Intent intent = new Intent(exercise1.this, TaskActivity.class);
+                        Intent intent = new Intent(exercise1.this, task1.class);
                         startActivity(intent);
                         break;
                     case R.id.bNext:

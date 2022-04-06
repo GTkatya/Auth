@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Auth">
         <activity
+            android:name=".task1"
+            android:exported="true" />
+        <activity
+            android:name=".PersonalArea"
+            android:exported="true" />
+        <activity
             android:name=".exercise4"
             android:exported="true" />
         <activity
