@@ -11,70 +11,77 @@
       android:layout_width="118dp"
       android:layout_height="52dp"
       android:layout_marginStart="17dp"
-      android:layout_marginTop="16dp"
+      android:layout_marginTop="28dp"
       android:layout_marginEnd="276dp"
       android:text="sign out"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/ex2"
+      android:layout_width="270dp"
+      android:layout_height="70dp"
+      android:layout_marginStart="73dp"
+      android:layout_marginTop="131dp"
+      android:layout_marginEnd="68dp"
+      android:text="Подключение JavaScript"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
   <Button
-      android:id="@+id/ex1"
-      android:layout_width="243dp"
-      android:layout_height="61dp"
-      android:layout_marginTop="228dp"
-      android:layout_marginEnd="92dp"
-      android:text="Основы JavaScript"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
-
-  <Button
-      android:id="@+id/ex2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Подключение JavaScript"
-      tools:layout_editor_absoluteX="78dp"
-      tools:layout_editor_absoluteY="162dp" />
-
-  <Button
-      android:id="@+id/ex3"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="144dp"
-      android:layout_marginEnd="160dp"
-      android:text="Циклы"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/ex2" />
-
-  <Button
       android:id="@+id/ex4"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="64dp"
-      android:layout_marginEnd="96dp"
+      android:layout_width="270dp"
+      android:layout_height="70dp"
+      android:layout_marginTop="19dp"
+      android:layout_marginEnd="65dp"
       android:text="условные операторы"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/ex3" />
 
   <Button
-      android:id="@+id/teor"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginEnd="8dp"
-      android:layout_marginBottom="56dp"
-      android:text="теория"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent" />
+      android:id="@+id/FAQ"
+      android:layout_width="270dp"
+      android:layout_height="70dp"
+      android:layout_marginStart="72dp"
+      android:layout_marginTop="22dp"
+      android:text="Дополнительный материал"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ex4" />
 
   <Button
-      android:id="@+id/FAQ"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="64dp"
-      android:layout_marginBottom="108dp"
-      android:text="Дополнительный материал"
+      android:id="@+id/teor"
+      android:layout_width="270dp"
+      android:layout_height="70dp"
+      android:layout_marginTop="26dp"
+      android:layout_marginEnd="64dp"
+      android:layout_marginBottom="64dp"
+      android:text="теория"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintStart_toStartOf="parent" />
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/FAQ" />
+
+  <Button
+      android:id="@+id/ex1"
+      android:layout_width="270dp"
+      android:layout_height="70dp"
+      android:layout_marginTop="23dp"
+      android:layout_marginEnd="64dp"
+      android:text="Основы JavaScript"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ex2" />
+
+  <Button
+      android:id="@+id/ex3"
+      android:layout_width="270dp"
+      android:layout_height="70dp"
+      android:layout_marginTop="26dp"
+      android:layout_marginEnd="65dp"
+      android:text="Типы данных"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ex1" />
 
   <Button
       android:id="@+id/bPA"

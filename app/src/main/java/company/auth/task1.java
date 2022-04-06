@@ -24,14 +24,11 @@ public class task1 extends AppCompatActivity {
                 "a)\tАналогия из жизни и объявление переменной\n" +
                 "b)\tПравила объявления переменных\n" +
                 "c)\tСовременный синтаксис.  let, const и var. Их использование, различия и область видимости.\n" +
-                "2.\tВывод сообщений с помощью конструкции alert\n" +
-                "a)\talert\n" +
-                "b)\tpromt\n" +
-                "c)\tconfirm\n" +
-                "3.\tТипы данных\n" +
-                "a)\tОбщие понятия об основных  типах данных\n" +
+                "2.\tВывод сообщений с помощью console.log\n" +
+                "3.\t....\n" +
+                "a)\t......\n" +
                 "b)\t\n" +
-                "c)\tСтроки\n" +
+                "c)\t....\n" +
                 "d)\t\n");
 
         View.OnClickListener onClickListener = new View.OnClickListener() {

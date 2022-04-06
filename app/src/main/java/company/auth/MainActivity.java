@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "EmailPassword";
 
     private FirebaseAuth mAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,24 +39,24 @@ public class MainActivity extends AppCompatActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                 mAuth.createUserWithEmailAndPassword(email.getText().toString(), pass.getText().toString())
-                .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-                            Log.d(TAG, "createUserWithEmail:success");
-                            FirebaseUser user = mAuth.getCurrentUser();
-                            updateUI(user);
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                            Toast.makeText(MainActivity.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-                            updateUI(null);
-                        }
-                    }
-                });
+                mAuth.createUserWithEmailAndPassword(email.getText().toString(), pass.getText().toString())
+                        .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) {
+                                    // Sign in success, update UI with the signed-in user's information
+                                    Log.d(TAG, "createUserWithEmail:success");
+                                    FirebaseUser user = mAuth.getCurrentUser();
+                                    updateUI(user);
+                                } else {
+                                    // If sign in fails, display a message to the user.
+                                    Log.w(TAG, "createUserWithEmail:failure", task.getException());
+                                    Toast.makeText(MainActivity.this, "Authentication failed.",
+                                            Toast.LENGTH_SHORT).show();
+                                    updateUI(null);
+                                }
+                            }
+                        });
             }
         });
         auth.setOnClickListener(new View.OnClickListener() {
@@ -81,7 +82,6 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             }
                         });
-
             }
         });
 
@@ -98,26 +98,12 @@ public class MainActivity extends AppCompatActivity {
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
-
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
+        if (currentUser != null) {
             reload();
         }
 
     }
-
-    private void createAccount(String email, String password) {
-
-    }
-
-    private void signIn(String email, String password) {
-        // [START sign_in_with_email]
-        //init button registration
-
-        // [END sign_in_with_email]
-    }
-
-
 
     //correct user entering in apps
     public void getUserProfile() {
@@ -136,11 +122,11 @@ public class MainActivity extends AppCompatActivity {
         // [END get_user_profile]
     }
 
-    private void reload() { }
+    private void reload() {
+    }
 
     private void updateUI(FirebaseUser user) {
-       /* Toast.makeText(getApplicationContext(),
-                "Пора покормить кота!", Toast.LENGTH_SHORT).show();*/
+
     }
 }
 
