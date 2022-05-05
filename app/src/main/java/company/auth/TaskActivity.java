@@ -35,6 +35,8 @@ public class TaskActivity extends AppCompatActivity /*implements View.OnClickLis
         exercise3 exercise3 = new exercise3();
         exercise4 exercise4 = new exercise4();
         PersonalArea PA = new PersonalArea();
+
+        RunJscript runJscript = new RunJscript();
         final Button ex1 = findViewById(R.id.ex1);
         final Button ex2 = findViewById(R.id.ex2);
         final Button ex3 = findViewById(R.id.ex3);
@@ -80,8 +82,8 @@ public class TaskActivity extends AppCompatActivity /*implements View.OnClickLis
                     startActivity(intent5);
                     break;
                 case R.id.teor:
-                    Toast.makeText(getApplicationContext(),
-                            "666!", Toast.LENGTH_SHORT).show();
+                    Intent intent6 = new Intent(TaskActivity.this, RunJscript.class);
+                    startActivity(intent6);
                     break;
 
                 case R.id.FAQ:

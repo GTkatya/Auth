@@ -17,5 +17,14 @@ public class RunJscript extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_run_jscript);
     }
+    public void clickHandler(View view) {
+        EditText input = findViewById(R.id.editTextInput);
+        EditText output = findViewById(R.id.editTextOutput);
 
+        Context context = Context.enter(); //
+        context.setOptimizationLevel(-1); // this is required[2]
+        Scriptable scope = context.initStandardObjects();
+        Object result = context.evaluateString(scope, input.getText().toString(), "<cmd>", 1, null);
+        output.setText(result.toString());
+    }
 }
