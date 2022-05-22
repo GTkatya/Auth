@@ -5,11 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.view.View;
-import org.mozilla.javascript.Context;
-import org.mozilla.javascript.Scriptable;
 import android.util.Log;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.webkit.ValueCallback;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 
 public class RunJscript extends AppCompatActivity {
 
@@ -22,17 +23,20 @@ public class RunJscript extends AppCompatActivity {
     public void clickHandler(View view) {
         EditText input = findViewById(R.id.editTextInput);
         EditText output = findViewById(R.id.editTextOutput);
+        WebView webView = new WebView(this);
+        WebSettings settings = webView.getSettings();
+        settings.setJavaScriptEnabled(true);
 
-        Context context = Context.enter(); //
-        context.setOptimizationLevel(-1); // this is required[2]
-        Scriptable scope = context.initStandardObjects();
         try {
-            Object result = context.evaluateString(scope, input.getText().toString(), "<cmd>", 1, null);
-            output.setText(result.toString());
+            webView.evaluateJavascript(input.getText().toString(), new ValueCallback<String>() {
+                @Override
+                public void onReceiveValue(String s) {
+                    output.setText(s);
+                }
+            });
         } catch (Exception e) {
-            Log.e("e", e.toString());
-            Toast.makeText(getApplicationContext(),
-                    "beast!", Toast.LENGTH_SHORT).show();
+            output.setText("Error: " + e.toString());
+            Log.e(getApplicationContext().getPackageName(), e.toString());
         }
     }
 }
