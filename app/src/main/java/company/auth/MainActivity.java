@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TaskActivity task = new TaskActivity();
+        MainMenu task = new MainMenu();
         mAuth = FirebaseAuth.getInstance(); //auth init
         // [START create_user_with_email]
         final Button reg = findViewById(R.id.reg);//init button registration
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     // Sign in success, update UI with the signed-in user's information
-                                    Intent intent = new Intent(MainActivity.this, TaskActivity.class);
+                                    Intent intent = new Intent(MainActivity.this, MainMenu.class);
                                     startActivity(intent);
                                     Log.d(TAG, "signInWithEmail:success");
                                     FirebaseUser user = mAuth.getCurrentUser();
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
        /* FirebaseUser user = mAuth.getCurrentUser();
         //пользователь уже в приложении(авторизирован)
         if (user!= null) {
-            Intent intent = new Intent(MainActivity.this, TaskActivity.class);
+            Intent intent = new Intent(MainActivity.this, MainMenu.class);
             startActivity(intent);
         }
         // [END create_user_with_email]*/

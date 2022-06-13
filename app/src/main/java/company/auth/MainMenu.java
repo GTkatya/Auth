@@ -6,17 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.List;
 
-public class TaskActivity extends AppCompatActivity /*implements View.OnClickListener*/{
+public class MainMenu extends AppCompatActivity /*implements View.OnClickListener*/{
 
     private FirebaseAuth auth;
     private DatabaseReference myRef;
@@ -49,7 +46,7 @@ public class TaskActivity extends AppCompatActivity /*implements View.OnClickLis
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(TaskActivity.this, MainActivity.class);
+                Intent intent = new Intent(MainMenu.this, MainActivity.class);
                 startActivity(intent);
 
             }
@@ -62,27 +59,27 @@ public class TaskActivity extends AppCompatActivity /*implements View.OnClickLis
             switch (view.getId())
             {
                 case R.id.out:
-                    Intent intent = new Intent(TaskActivity.this, MainActivity.class);
+                    Intent intent = new Intent(MainMenu.this, MainActivity.class);
                     startActivity(intent);
                     break;
                 case R.id.ex1:
-                    Intent intent2 = new Intent(TaskActivity.this, task1.class);
+                    Intent intent2 = new Intent(MainMenu.this, task1.class);
                     startActivity(intent2);
                     break;
                 case R.id.ex2:
-                    Intent intent3 = new Intent(TaskActivity.this, exercise2.class);
+                    Intent intent3 = new Intent(MainMenu.this, exercise2.class);
                     startActivity(intent3);
                     break;
                 case R.id.ex3:
-                    Intent intent4 = new Intent(TaskActivity.this, exercise3.class);
+                    Intent intent4 = new Intent(MainMenu.this, exercise3.class);
                     startActivity(intent4);
                     break;
                 case R.id.ex4:
-                    Intent intent5 = new Intent(TaskActivity.this, exercise4.class);
+                    Intent intent5 = new Intent(MainMenu.this, exercise4.class);
                     startActivity(intent5);
                     break;
                 case R.id.teor:
-                    Intent intent6 = new Intent(TaskActivity.this, RunJscript.class);
+                    Intent intent6 = new Intent(MainMenu.this, RunJscript.class);
                     startActivity(intent6);
                     break;
 
@@ -91,7 +88,7 @@ public class TaskActivity extends AppCompatActivity /*implements View.OnClickLis
                             "777!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.bPA:
-                    Intent intentA = new Intent(TaskActivity.this, PersonalArea.class);
+                    Intent intentA = new Intent(MainMenu.this, PersonalArea.class);
                     startActivity(intentA);
                     break;
             }

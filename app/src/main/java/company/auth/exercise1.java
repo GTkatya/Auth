@@ -19,7 +19,7 @@ public class exercise1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise1);
         final TextView txtEx = findViewById(R.id.txtEx);
-       /* TaskActivity taskA = new TaskActivity();*/
+       /* MainMenu taskA = new MainMenu();*/
         exercise1a exercise1a= new exercise1a();
         task1 task1 = new task1();
         final Button out2 = findViewById(R.id.out2);

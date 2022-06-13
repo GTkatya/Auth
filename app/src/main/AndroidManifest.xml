@@ -34,7 +34,7 @@
             android:name=".exercise1"
             android:exported="true" />
         <activity
-            android:name=".TaskActivity"
+            android:name=".MainMenu"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

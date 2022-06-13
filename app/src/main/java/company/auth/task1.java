@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class task1 extends AppCompatActivity {
@@ -36,7 +35,7 @@ public class task1 extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.bout3:
-                        Intent intent = new Intent(task1.this, TaskActivity.class);
+                        Intent intent = new Intent(task1.this, MainMenu.class);
                         startActivity(intent);
                         break;
                     case R.id.bNext2:
