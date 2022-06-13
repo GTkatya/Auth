@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class exercise2 extends AppCompatActivity {
+public class IntroductionToJS extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
