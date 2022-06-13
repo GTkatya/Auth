@@ -4,13 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IntroductionToJS1">
+    tools:context=".IntroductionSection">
 
-    <TextView
-        android:id="@+id/txtFact"
-        android:layout_width="370dp"
-        android:layout_height="286dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="27dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
