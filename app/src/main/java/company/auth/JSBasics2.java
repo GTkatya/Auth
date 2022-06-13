@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class exercise1a extends AppCompatActivity {
+public class JSBasics2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -28,7 +28,7 @@
             android:name=".exercise2"
             android:exported="true" />
         <activity
-            android:name=".exercise1a"
+            android:name=".JSBasics2"
             android:exported="true" />
         <activity
             android:name=".JSBasics1"

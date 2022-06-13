@@ -17,7 +17,7 @@ public class JSBasics1 extends AppCompatActivity {
         setContentView(R.layout.activity_exercise1);
         final TextView txtEx = findViewById(R.id.txtEx);
        /* MainMenu taskA = new MainMenu();*/
-        exercise1a exercise1a= new exercise1a();
+        JSBasics2 JSBasics2 = new JSBasics2();
         task1 task1 = new task1();
         final Button out2 = findViewById(R.id.out2);
         final Button bNext = findViewById(R.id.bNext);
@@ -45,7 +45,7 @@ public class JSBasics1 extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case R.id.bNext:
-                        Intent intent2 = new Intent(JSBasics1.this, exercise1a.class);
+                        Intent intent2 = new Intent(JSBasics1.this, JSBasics2.class);
                         startActivity(intent2);
                         break;
 
