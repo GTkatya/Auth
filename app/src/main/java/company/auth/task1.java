@@ -15,7 +15,7 @@ public class task1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task1);
         final TextView txtT = findViewById(R.id.txtT);
-        exercise1 exercise1 = new exercise1();
+        JSBasics1 JSBasics1 = new JSBasics1();
         final Button bout3 = findViewById(R.id.bout3);
         final Button bNext2 = findViewById(R.id.bNext2);
         txtT.setText("Основы JavaScript\n" +
@@ -39,7 +39,7 @@ public class task1 extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case R.id.bNext2:
-                        Intent intent2 = new Intent(task1.this, exercise1.class);
+                        Intent intent2 = new Intent(task1.this, JSBasics1.class);
                         startActivity(intent2);
                         break;
 

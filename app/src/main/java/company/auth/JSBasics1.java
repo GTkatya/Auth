@@ -8,11 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.gms.tasks.Task;
-
-public class exercise1 extends AppCompatActivity {
+public class JSBasics1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,11 +41,11 @@ public class exercise1 extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.out2:
-                        Intent intent = new Intent(exercise1.this, task1.class);
+                        Intent intent = new Intent(JSBasics1.this, task1.class);
                         startActivity(intent);
                         break;
                     case R.id.bNext:
-                        Intent intent2 = new Intent(exercise1.this, exercise1a.class);
+                        Intent intent2 = new Intent(JSBasics1.this, exercise1a.class);
                         startActivity(intent2);
                         break;
 

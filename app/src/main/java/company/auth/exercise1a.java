@@ -12,7 +12,7 @@ public class exercise1a extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise1a);
-        exercise1 exe1 = new exercise1();
+        JSBasics1 exe1 = new JSBasics1();
         final TextView txtE = findViewById(R.id.txtE);
 
         txtE.setText("Давайте попробуем с вами создать свой ящик и поместить туда свои данные\n" +

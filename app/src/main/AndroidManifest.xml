@@ -31,7 +31,7 @@
             android:name=".exercise1a"
             android:exported="true" />
         <activity
-            android:name=".exercise1"
+            android:name=".JSBasics1"
             android:exported="true" />
         <activity
             android:name=".MainMenu"
