@@ -67,7 +67,7 @@ public class MainMenu extends AppCompatActivity /*implements View.OnClickListene
                     startActivity(intent2);
                     break;
                 case R.id.ex2:
-                    Intent intent3 = new Intent(MainMenu.this, IntroductionToJS1.class);
+                    Intent intent3 = new Intent(MainMenu.this, IntroductionSection.class);
                     startActivity(intent3);
                     break;
                 case R.id.ex3:
