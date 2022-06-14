@@ -2,10 +2,12 @@ package company.auth;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.view.View;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,8 +25,20 @@ public class RunJscript extends AppCompatActivity {
         setContentView(R.layout.activity_run_jscript);
         Bundle bundle = getIntent().getExtras();
         int message = bundle.getInt("message");
-        TextView txtView = (TextView) findViewById(R.id.txtresult);
-        txtView.setText(Integer.toString(message));
+        final Button bMenu = findViewById(R.id.bMenu);
+        View.OnClickListener onClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switch (view.getId()) {
+                    case R.id.bMenu:
+                        Intent intent = new Intent(RunJscript.this, MainMenu.class);
+                        startActivity(intent);
+                        break;
+                }
+            }
+        };
+        bMenu.setOnClickListener(onClickListener);
+
     }
 
 
