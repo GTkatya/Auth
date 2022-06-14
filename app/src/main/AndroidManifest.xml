@@ -31,7 +31,7 @@
             android:name=".PersonalArea"
             android:exported="true" />
         <activity
-            android:name=".exercise4"
+            android:name=".ArrayJS1"
             android:exported="true" />
         <activity
             android:name=".StringJS1"
