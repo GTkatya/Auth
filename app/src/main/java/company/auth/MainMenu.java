@@ -37,7 +37,6 @@ public class MainMenu extends AppCompatActivity /*implements View.OnClickListene
         final Button ex2 = findViewById(R.id.ex2);
         final Button ex3 = findViewById(R.id.ex3);
         final Button ex4 = findViewById(R.id.ex4);
-        final Button FAQ = findViewById(R.id.FAQ);
         final Button bPA = findViewById(R.id.bPA);
 
       /*  out.setOnClickListener(new View.OnClickListener() {
@@ -76,11 +75,6 @@ public class MainMenu extends AppCompatActivity /*implements View.OnClickListene
                     Intent intent5 = new Intent(MainMenu.this, ArrayJS1.class);
                     startActivity(intent5);
                     break;
-
-                case R.id.FAQ:
-                    Toast.makeText(getApplicationContext(),
-                            "777!", Toast.LENGTH_SHORT).show();
-                    break;
                 case R.id.bPA:
                     Intent intentA = new Intent(MainMenu.this, PersonalArea.class);
                     startActivity(intentA);
@@ -95,7 +89,6 @@ public class MainMenu extends AppCompatActivity /*implements View.OnClickListene
         ex2.setOnClickListener(onClickListener);
         ex3.setOnClickListener(onClickListener);
         ex4.setOnClickListener(onClickListener);
-        FAQ.setOnClickListener(onClickListener);
         bPA.setOnClickListener(onClickListener);
     }
 }
