@@ -39,8 +39,7 @@ public class JSBasics2 extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case R.id.b_next_JSB2:
-                        Intent intent2 = new Intent(JSBasics2.this, RunJscript.class);
-                        intent2.putExtra("message", 1);
+                        Intent intent2 = new Intent(JSBasics2.this, JSBasics3.class);
                         startActivity(intent2);
                         break;
 

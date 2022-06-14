@@ -16,7 +16,7 @@ public class IntroductionToJS2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inproduction_to_js2);
         final TextView txtStory = findViewById(R.id.txtStory);
-        IntroductionSection IntroductionSection = new IntroductionSection();
+        IntroductionToJS1 IntroductionToJS1 = new IntroductionToJS1();
         final Button b_out_ITJS2 = findViewById(R.id.b_out_ITJS2);
         final Button b_next_ITJS2 = findViewById(R.id.b_next_ITJS2);
         txtStory.setText("История развития языка JavaScript:\n");
@@ -30,17 +30,15 @@ public class IntroductionToJS2 extends AppCompatActivity {
                         Intent intent = new Intent(IntroductionToJS2.this, IntroductionToJS1.class);
                         startActivity(intent);
                         break;
-                    /*case R.id.b_next_ITJS:
-                        Intent intent2 = new Intent(IntroductionToJS1.this, JSBasics2.class);
+                    case R.id.b_next_ITJS2:
+                        Intent intent2 = new Intent(IntroductionToJS2.this, IntroductionToJS3.class);
                         startActivity(intent2);
-                        break;*/
+                        break;
 
                 }
             }
-
-
         };
         b_out_ITJS2.setOnClickListener(onClickListener);
-        /*b_next_ITJS.setOnClickListener(onClickListener);*/
+        b_next_ITJS2.setOnClickListener(onClickListener);
     }
 }

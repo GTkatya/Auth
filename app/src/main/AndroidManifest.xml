@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Auth">
         <activity
+            android:name=".JSBasics3"
+            android:exported="true" />
+        <activity
+            android:name=".IntroductionToJS3"
+            android:exported="true" />
+        <activity
             android:name=".IntroductionToJS2"
             android:exported="true" />
         <activity
