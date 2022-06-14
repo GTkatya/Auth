@@ -34,7 +34,7 @@
             android:name=".exercise4"
             android:exported="true" />
         <activity
-            android:name=".exercise3"
+            android:name=".StringJS1"
             android:exported="true" />
         <activity
             android:name=".IntroductionToJS1"

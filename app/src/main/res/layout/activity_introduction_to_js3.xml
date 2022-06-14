@@ -8,10 +8,10 @@
 
     <TextView
         android:id="@+id/txtOp"
-        android:layout_width="335dp"
-        android:layout_height="339dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="354dp"
+        android:layout_height="610dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

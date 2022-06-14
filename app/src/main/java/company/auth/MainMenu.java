@@ -29,7 +29,7 @@ public class MainMenu extends AppCompatActivity /*implements View.OnClickListene
         task1 task1 = new task1();
 
         IntroductionToJS1 IntroductionToJS1 = new IntroductionToJS1();
-        exercise3 exercise3 = new exercise3();
+        StringJS1 StringJS1 = new StringJS1();
         exercise4 exercise4 = new exercise4();
         PersonalArea PA = new PersonalArea();
 
@@ -69,7 +69,7 @@ public class MainMenu extends AppCompatActivity /*implements View.OnClickListene
                     startActivity(intent3);
                     break;
                 case R.id.ex3:
-                    Intent intent4 = new Intent(MainMenu.this, exercise3.class);
+                    Intent intent4 = new Intent(MainMenu.this, StringJS1.class);
                     startActivity(intent4);
                     break;
                 case R.id.ex4:

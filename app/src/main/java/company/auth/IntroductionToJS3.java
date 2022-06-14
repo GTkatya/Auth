@@ -20,13 +20,34 @@ public class IntroductionToJS3 extends AppCompatActivity {
         MainMenu mainMenu = new MainMenu();
         final Button b_out_ITJS3 = findViewById(R.id.b_out_ITJS3);
         final Button b_next_ITJS3 = findViewById(R.id.b_next_ITJS3);
-        txtOp.setText("Операторы языка JavaScript:\n" +
+        txtOp.setText("Операторы:\n" +
+                "\n" +
                 "Присваивание: =\n" +
+                "\n" +
                 "Математические: *, /, +, -, %, **, ++, --\n" +
+                "\n" +
                 "Сравнения: >, <, >=, <=, ==, !=, ===, !==\n" +
+                "\n" +
                 "Логические: !, ||, &&\n" +
+                "\n" +
                 "Тернарный: ?\n" +
-                "Побитовые: |, &, ~, ^, <<, >>, >>>");
+                "\n" +
+                "Побитовые: |, &, ~, ^, <<, >>, >>>\n" +
+                "Неявное приведение типа\n" +
+                "\n" +
+                "Операторы неявно приводят переменные к тому типу, с которым работают.\n" +
+                "Математические операторы приводят к типу number, кроме оператора +.\n" +
+                "Логические операторы и операторы сравнения приводят к типу boolean.\n" +
+                "\"6\" / \"2\" // 3\n" +
+                "3 + \"2\" // 5\n" +
+                "Особенности оператора +\n" +
+                "\n" +
+                "Оператор \"+\" работает ещё и со строками, поэтому если первый операнд строка, то второй будет преобразован в строку:\n" +
+                "'2' + 1\n" +
+                "// '21'\n" +
+                "\n" +
+                "'2' - 1\n" +
+                "// 1\n");
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {

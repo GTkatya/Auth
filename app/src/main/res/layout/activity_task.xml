@@ -38,7 +38,7 @@
       android:layout_height="70dp"
       android:layout_marginTop="20dp"
       android:layout_marginEnd="68dp"
-      android:text="условные операторы"
+      android:text="Циклы"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/ex3" />
 
@@ -48,7 +48,7 @@
       android:layout_height="70dp"
       android:layout_marginTop="20dp"
       android:layout_marginEnd="68dp"
-      android:text="Дополнительный материал"
+      android:text="Условные операторы"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/ex4" />
 
@@ -68,7 +68,7 @@
       android:layout_height="70dp"
       android:layout_marginTop="20dp"
       android:layout_marginEnd="68dp"
-      android:text="Типы данных"
+      android:text="Строки"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/ex1" />
 
@@ -76,15 +76,12 @@
       android:id="@+id/bPA"
       android:layout_width="99dp"
       android:layout_height="81dp"
-      android:layout_marginStart="296dp"
       android:layout_marginTop="16dp"
       android:layout_marginEnd="16dp"
-      android:layout_marginBottom="634dp"
+      android:text="ghjabkm"
       app:icon="@drawable/icon"
       app:iconTint="#FFFFFF"
-      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
