@@ -33,17 +33,15 @@ public class IntroductionToJS1 extends AppCompatActivity {
                         Intent intent = new Intent(IntroductionToJS1.this, IntroductionSection.class);
                         startActivity(intent);
                         break;
-                    /*case R.id.b_next_ITJS:
-                        Intent intent2 = new Intent(IntroductionToJS1.this, JSBasics2.class);
+                    case R.id.b_next_ITJS:
+                        Intent intent2 = new Intent(IntroductionToJS1.this, IntroductionToJS2.class);
                         startActivity(intent2);
-                        break;*/
+                        break;
 
                 }
             }
-
-
         };
         b_out_ITJS.setOnClickListener(onClickListener);
-        /*b_next_ITJS.setOnClickListener(onClickListener);*/
+        b_next_ITJS.setOnClickListener(onClickListener);
     }
 }

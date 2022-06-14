@@ -25,8 +25,6 @@ public class RunJscript extends AppCompatActivity {
         int message = bundle.getInt("message");
         TextView txtView = (TextView) findViewById(R.id.txtresult);
         txtView.setText(Integer.toString(message));
-
-
     }
 
 
